@@ -9,6 +9,8 @@ pipeline {
         stage("test") {
             steps {
                 echo "Testing..."
+                sh 'make check || true' 
+                junit '**/target/*.xml'
             }
 
 
