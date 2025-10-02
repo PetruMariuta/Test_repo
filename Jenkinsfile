@@ -11,6 +11,7 @@ pipeline {
                 echo "Testing..."
                 sh 'make check || true' 
                 junit '**/target/*.xml'
+                echo "Done"
             }
 
 
