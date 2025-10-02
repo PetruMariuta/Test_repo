@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 import os
 
 
-print("here")
 
 main_app = Flask(__name__, template_folder='templates')
 @main_app.route('/')
