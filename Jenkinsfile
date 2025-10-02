@@ -11,7 +11,7 @@ pipeline {
                 echo "Testing..."
                 sh 'make check || true' 
                 junit '*.xml'
-                echo "Done"
+                echo "Done fra"
             }
 
 
@@ -22,6 +22,7 @@ pipeline {
             steps {
 
                 echo "Deploy...."
+                echo "Done fra"
             }
         }
     }
