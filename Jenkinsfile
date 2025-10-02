@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Testing..."
                 sh 'make check || true' 
-                junit '**/target/*.xml'
+                junit '*.xml'
                 echo "Done"
             }
 
